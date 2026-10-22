@@ -1,6 +1,6 @@
 # OpenDAP workspace
 
-OpenDAP is an open-source, open-hardware digital audio player (DAP) that runs 100% on Linux, and a general-purpose Linux device. **OpenDAP** is the brand; **OpenDAP T1** is the first device. Faceplates are interchangeable front modules (default: touch); HATs are accessories mounted on the back.
+OpenDAP is an open-source, open-hardware digital audio player (DAP) that runs 100% on Linux. Beyond playback, it is a general-purpose Linux device that HATs extend. **OpenDAP** is the brand; **OpenDAP T1** is the first device. Faceplates are interchangeable front modules (default: touch); HATs are accessories mounted on the back.
 
 This folder is the public `workspace` repository. Every folder under `public/` and `private/` is its own git repository. Commit and push each repository separately.
 
@@ -18,7 +18,7 @@ The project is in **early open development**: say so plainly, and never present 
 
 - **Names.** OpenDAP (brand) · OpenDAP T1 (the DAP; "the T1" after first mention) · OpenDAP OS · OpenDAP HATs · OpenDAP Developer Toolkit · faceplates · DIY edition and Commercial edition. Never "DAP OS", and never a product name the maintainers have not confirmed.
 - **Engineering before promises.** A claim needs evidence: a measurement, a datasheet, a simulation, a working system. Write what it does and how, with numbers and sources; mark the unverified as **UNVERIFIED**.
-- **Say what it is first.** OpenDAP is a DAP: lead with that, in plain words, before any abstraction.
+- **A DAP first.** OpenDAP is a DAP: lead with that, in plain words, before any abstraction. The advanced uses (general-purpose Linux, HATs, developer platform) come after, as what the DAP can also do, never as the headline.
 - **Precise and restrained.** No superlatives, hype, marketing adjectives or exclamation marks. Character comes from clear, deliberate decisions, not from tone.
 - **Integration before accumulation.** Explain how parts work together; do not pad with feature lists.
 - **Complexity available, never imposed.** Lead with the plain answer; put depth (tables, derivations, alternatives) after it, for whoever wants it.
