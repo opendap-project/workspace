@@ -1,6 +1,6 @@
 # OpenDAP workspace
 
-Root of the OpenDAP working tree: the shared `CLAUDE.md` (inherited by every repository in Claude Code), the list of public repositories and the bootstrap script.
+OpenDAP builds personal audio instruments on an open hardware and software platform. This is the root of its working tree: the shared `CLAUDE.md` (inherited by every repository in Claude Code), the list of public repositories and the bootstrap script.
 
 ## Set up
 

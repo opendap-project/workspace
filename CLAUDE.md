@@ -1,6 +1,6 @@
 # OpenDAP workspace
 
-OpenDAP is an open-source, open-hardware digital audio player that runs 100% on Linux, and a general-purpose Linux gadget. **OpenDAP** is the brand; **T1** is the first device. Faceplates are interchangeable front modules (default: touch); HATs are accessories mounted on the back.
+OpenDAP builds personal audio instruments on an open hardware and software platform. **OpenDAP** is the brand; **OpenDAP T1** is the first instrument: a digital audio player that runs 100% on Linux and a general-purpose Linux device. Faceplates are interchangeable front modules (default: touch); HATs are accessories mounted on the back.
 
 This folder is the public `workspace` repository. Every folder under `public/` and `private/` is its own git repository. Commit and push each repository separately.
 
@@ -11,6 +11,18 @@ People and agents have different access: public only, all private repositories, 
 - Run `scripts/bootstrap.sh` (add `--json` for a machine-readable report, `--update` to fast-forward, `--public-only` to skip private repositories). It clones every public repository from `repos.tsv`, then the private overlay `private/workspace-private` and each private repository listed there **that your git credentials can reach**; the rest are reported as `skipped`. It never prompts for passwords.
 - Never assume a repository exists locally: check the bootstrap report or the folder before reading, editing or referencing it. A private repository missing locally means no access, not an error.
 - Never copy private content into a public repository, and never mention private-only details in public ones.
+
+## Brand and voice
+
+The project is in **early open development**: say so plainly, and never present plans as products or prototypes as finished.
+
+- **Names.** OpenDAP (brand) · OpenDAP T1 (the instrument; "the T1" after first mention) · OpenDAP OS · OpenDAP HATs · OpenDAP Developer Toolkit · faceplates · DIY edition and Commercial edition. Never "DAP OS", and never a product name the maintainers have not confirmed.
+- **Engineering before promises.** A claim needs evidence: a measurement, a datasheet, a simulation, a working system. Write what it does and how, with numbers and sources; mark the unverified as **UNVERIFIED**.
+- **Precise and restrained.** No superlatives, hype, marketing adjectives or exclamation marks. Character comes from clear, deliberate decisions, not from tone.
+- **Integration before accumulation.** Explain how parts work together; do not pad with feature lists.
+- **Complexity available, never imposed.** Lead with the plain answer; put depth (tables, derivations, alternatives) after it, for whoever wants it.
+- **Openness is architectural.** Show it through documented interfaces, reproducible builds and specifications, not by repeating the word "open".
+- **Visual work** (renders, previews, diagrams, UI): deliberate geometry, contemporary and legible type, clear hierarchy, a restrained palette with functional colour accents, and faithful depiction of the real product. Technical drawings, diagrams and exploded views are part of the identity.
 
 ## Rules
 
