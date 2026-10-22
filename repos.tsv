@@ -3,7 +3,7 @@ public/.github	opendap-project/.github
 public/board	opendap-project/board
 public/case	opendap-project/case
 public/claude-plugins	opendap-project/claude-plugins
-public/opendap-os	opendap-project/opendap-os
+public/desktop	opendap-project/desktop
 public/faceplates/cassette	opendap-project/faceplate-cassette
 public/faceplates/classic	opendap-project/faceplate-classic
 public/faceplates/touch	opendap-project/faceplate-touch
@@ -19,6 +19,7 @@ public/libs/blender	opendap-project/blender-lib
 public/libs/freecad	opendap-project/freecad-lib
 public/libs/kicad	opendap-project/kicad-lib
 public/libs/parts	opendap-project/parts-lib
+public/opendap-os	opendap-project/opendap-os
 public/rfcs	opendap-project/rfcs
 public/system	opendap-project/system
 public/t1	opendap-project/t1
