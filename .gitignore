@@ -1,0 +1,5 @@
+/public/
+/private/
+.DS_Store
+.claude/settings.local.json
+.state/
