@@ -1,6 +1,6 @@
 # OpenDAP workspace
 
-OpenDAP builds personal audio instruments on an open hardware and software platform. This is the root of its working tree: the shared `CLAUDE.md` (inherited by every repository in Claude Code), the list of public repositories and the bootstrap script.
+OpenDAP is an open-source, open-hardware digital audio player (DAP) that runs entirely on Linux. This is the root of its working tree: the shared `CLAUDE.md` (inherited by every repository in Claude Code), the list of public repositories and the bootstrap script.
 
 ## Set up
 
