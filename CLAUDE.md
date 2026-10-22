@@ -30,6 +30,7 @@ The project is in **early open development**: say so plainly, and never present 
 - **English only** in everything written to a repository: code, docs, commit messages, names, GitHub descriptions. Talk to the user in whatever language they use.
 - **Confirmed information only.** Record what the maintainers stated. Do not infer specs, numbers or wording. Earlier experiments (old claude.ai artifacts) are not a source.
 - **Product priority.** The audiophile experience is never sacrificed (100 %). Everything else is balanced by cost and benefit to make the best product and use the hardware fully. No decision depends on getting a dev kit.
+- **100 % of the hardware, never software limits.** Software exposes everything the hardware can do; features are never locked, capped or hidden to segment products. The only limits are for safety (BRD-049), and they are documented and visible to the user, never silent.
 - **Hardware parts:** always prefer commercial, highly available, easy-to-source parts, of the most recent generation that stays compatible (mainline support, SoC interfaces).
 - **Software:** always prefer the most standard Linux, open-source, trick-less option.
 - **Don't get ahead.** Do not propose software stacks or technology choices until the maintainers open that topic.
