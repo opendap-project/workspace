@@ -28,4 +28,4 @@ public/toolkit/hardware	opendap-project/toolkit-hardware
 public/toolkit/hooks	opendap-project/toolkit-hooks
 public/toolkit/host	opendap-project/toolkit-host
 public/toolkit/verify	opendap-project/toolkit-verify
-public/ui-components	opendap-project/ui-components
+public/blackbird-ui	opendap-project/blackbird-ui
