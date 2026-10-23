@@ -23,6 +23,7 @@ public/blackbird-os	opendap-project/blackbird-os
 public/rfcs	opendap-project/rfcs
 public/system	opendap-project/system
 public/t1	opendap-project/t1
+public/virtual-devices	opendap-project/virtual-devices
 public/toolkit/cli	opendap-project/toolkit-cli
 public/toolkit/hardware	opendap-project/toolkit-hardware
 public/toolkit/hooks	opendap-project/toolkit-hooks
