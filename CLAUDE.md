@@ -23,7 +23,7 @@ The project is in **early open development**: say so plainly, and never present 
 - **Integration before accumulation.** Explain how parts work together; do not pad with feature lists.
 - **Complexity available, never imposed.** Lead with the plain answer; put depth (tables, derivations, alternatives) after it, for whoever wants it.
 - **Openness is architectural.** Show it through documented interfaces, reproducible builds and specifications, not by repeating the word "open".
-- **Visual work** (renders, previews, diagrams, UI): follow the [design system spec](https://github.com/opendap-project/ui-components/blob/main/docs/specs/design-system.md) (`public/ui-components/docs/specs/design-system.md`), the reference for all visual work: deliberate geometry, contemporary and legible type, clear hierarchy, a restrained palette with functional colour accents, and faithful depiction of the real product. Technical drawings, diagrams and exploded views are part of the identity.
+- **Visual work** (renders, previews, diagrams, UI): follow the [Engineered Matter design system spec](https://github.com/opendap-project/ui-components/blob/main/docs/specs/design-system.md) (`public/ui-components/docs/specs/design-system.md`), the reference for all visual work: deliberate geometry, contemporary and legible type, clear hierarchy, a restrained palette with functional colour accents, and faithful depiction of the real product. Technical drawings, diagrams and exploded views are part of the identity.
 
 ## Rules
 
