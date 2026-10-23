@@ -16,7 +16,7 @@ People and agents have different access: public only, all private repositories, 
 
 The project is in **early open development**: say so plainly, and never present plans as products or prototypes as finished.
 
-- **Names.** OpenDAP (brand) · OpenDAP T1 (the DAP; "the T1" after first mention) · OpenDAP OS · OpenDAP HATs · OpenDAP Developer Toolkit · faceplates · DIY edition and Commercial edition. Never "DAP OS", and never a product name the maintainers have not confirmed.
+- **Names.** OpenDAP (brand) · OpenDAP T1 (the DAP; "the T1" after first mention) · Blackbird OS · OpenDAP HATs · OpenDAP Developer Toolkit · faceplates · DIY edition and Commercial edition. Never "DAP OS", and never a product name the maintainers have not confirmed.
 - **Engineering before promises.** A claim needs evidence: a measurement, a datasheet, a simulation, a working system. Write what it does and how, with numbers and sources; mark the unverified as **UNVERIFIED**.
 - **A DAP first.** OpenDAP is a DAP: lead with that, in plain words, before any abstraction. The advanced uses (general-purpose Linux, HATs, developer platform) come after, as what the DAP can also do, never as the headline.
 - **Precise and restrained.** No superlatives, hype, marketing adjectives or exclamation marks. Character comes from clear, deliberate decisions, not from tone.

@@ -19,7 +19,7 @@ public/libs/blender	opendap-project/blender-lib
 public/libs/freecad	opendap-project/freecad-lib
 public/libs/kicad	opendap-project/kicad-lib
 public/libs/parts	opendap-project/parts-lib
-public/opendap-os	opendap-project/opendap-os
+public/blackbird-os	opendap-project/blackbird-os
 public/rfcs	opendap-project/rfcs
 public/system	opendap-project/system
 public/t1	opendap-project/t1
