@@ -49,6 +49,18 @@ The project is in **early open development**: say so plainly, and never present 
 - **Supported hosts.** Toolkit and development officially support only UNIX / POSIX systems, tested on macOS only. No Windows.
 - **3D previews.** Blender for renders; standalone HTML documents (three.js, anime.js…) for product-side 3D animations and interactive previews that do not need Blender, built from components' `export/` (glTF, STEP). Presentation videos: those HTML previews captured frame by frame with Playwright (stepping the page clock) and assembled with ffmpeg.
 
+## Shared machine
+
+Several agent sessions often work in this workspace at once, on one developer machine. CPU, memory and the VMs are shared.
+
+- **Reuse before starting.** Check what already runs (`odapkit image vm status`, `odap-vdev status`) and use it instead of starting a second copy.
+- **What you start, you stop.** VMs, simulator windows, dev servers, simulations and background jobs belong to the session that started them; stop them when the task ends (`odapkit image vm stop`, `odap-vdev stop`) and leave no stray processes behind.
+- **Never stop another session's resource on a guess.** Find the owner with `ListAgents` and ask with `SendMessage`; if nobody answers, ask the user. Pass findings about someone else's work to its owner instead of editing it.
+- **The build VM is for `mkosi` only** and reserves its full CPU and memory while it runs. `odapkit image` starts it on use and stops it after 10 idle minutes; never keep it up by hand without a reason. The virtual T1 runs one instance (`odap-vdev start` refuses a second), only while someone is testing on it.
+- **Heavy jobs** (builds, simulation sweeps, renders): check the load first, cap parallelism so other sessions keep cores, run them in the background and wait for the notification instead of polling.
+- **Development tools follow T1-046 and T1-047 too.** No fixed-rate polling: reuse one connection or subscribe to events (SSH `ControlMaster`, the device's event pipes). Any periodic work justifies its rate and keeps its logs bounded.
+- **Measure before you claim.** A waste or a leak is shown with numbers sampled over time (`top` samples, guest PSI, file descriptor counts, journal growth), not inferred from one snapshot.
+
 ## Layout
 
 - `public/` → public repositories in [opendap-project](https://github.com/opendap-project); `repos.tsv` maps every folder to its repository. Generic repositories sit at the top: `system` (OpenDAP software), `blackbird-os`, `blackbird-ui`, `cli` (the user-side `opendap` CLI, like adb), `desktop`, `virtual-devices`, `rfcs`, `claude-plugins`. `public/devices/<device>/` groups what is specific to one device: `devices/t1/{t1,board,case}` and `devices/t1/faceplates/<name>` (→ `faceplate-<name>`). `public/hats/<name>` maps to `hat-<name>` (`hats/standard` is `hat-standard`), `public/libs/<name>` to `<name>-lib`. `public/toolkit/<name>` maps to `toolkit-<name>`: the Developer Toolkit is for maintainers, one repository per tool domain (`host`, `image`, `hardware`, `verify`, `hooks`), reached through one command, `odapkit <tool>` (`odapkit-<tool>` executables, RFC 0009). It is not the CLI: `opendap` never needs `odapkit`, and `odapkit` may use `opendap`. Device binaries keep `odap-*`.
