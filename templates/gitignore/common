@@ -1,0 +1,4 @@
+.DS_Store
+.claude/settings.local.json
+# Generated trees kept out of indexers (odapkit noindex): the renamed trees and their symlinks
+*.noindex

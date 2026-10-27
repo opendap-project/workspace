@@ -1,0 +1,107 @@
+# Shared boilerplate: each [[file]] is copied verbatim into the repositories it applies to.
+# odapkit sync --check reports drift; odapkit sync --apply repairs it. Spec: toolkit-host docs/specs/workspace-sync.md.
+schema = "opendap.sync/v1"
+
+[[file]]
+template = "claude/settings.json"
+target = ".claude/settings.json"
+repos = ["public/*"]
+when = "always"
+
+[[file]]
+template = "markdownlint-cli2.jsonc"
+target = ".markdownlint-cli2.jsonc"
+repos = ["public/*"]
+when = "always"
+
+[[file]]
+template = "claude/rules/kicad.md"
+target = ".claude/rules/kicad.md"
+repos = ["public/*"]
+when = "present"
+
+[[file]]
+template = "claude/rules/freecad.md"
+target = ".claude/rules/freecad.md"
+repos = ["public/*"]
+when = "present"
+
+[[file]]
+template = "claude/rules/blender.md"
+target = ".claude/rules/blender.md"
+repos = ["public/*"]
+exclude = ["public/libs/blender"]
+when = "present"
+
+[[file]]
+template = "claude/rules/export.md"
+target = ".claude/rules/export.md"
+repos = ["public/*"]
+when = "present"
+
+[[file]]
+template = "claude/rules/firmware.md"
+target = ".claude/rules/firmware.md"
+repos = ["public/*"]
+when = "present"
+
+[[file]]
+template = "claude/rules/sim.md"
+target = ".claude/rules/sim.md"
+repos = ["public/*"]
+when = "present"
+
+# ---- Composed files: one managed block per file; lines outside the block are the repository's own ----
+# board, libs/kicad and libs/parts join after the public history rewrite (restructure task HL-37).
+
+[[block]]
+target = ".gitignore"
+repos = ["public/*"]
+exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
+
+[[block.fragment]]
+template = "gitignore/common"
+
+[[block.fragment]]
+template = "gitignore/rust"
+when_tracked = ["Cargo.toml"]
+
+[[block.fragment]]
+template = "gitignore/python"
+when_tracked = ["*.py", "pyproject.toml"]
+
+[[block.fragment]]
+template = "gitignore/kicad"
+when_tracked = ["*.kicad_pro", "*.kicad_sch", "*.kicad_sym", "*.kicad_mod"]
+
+[[block.fragment]]
+template = "gitignore/freecad"
+when_tracked = ["*.FCStd"]
+
+[[block.fragment]]
+template = "gitignore/blender"
+when_tracked = ["*.blend"]
+
+[[block]]
+target = ".gitattributes"
+repos = ["public/*"]
+exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
+
+[[block.fragment]]
+template = "gitattributes/kicad"
+when_tracked = ["*.kicad_pro", "*.kicad_sch", "*.kicad_sym", "*.kicad_mod"]
+
+[[block.fragment]]
+template = "gitattributes/lfs"
+when_tracked = ["*.FCStd", "*.blend", "*.step", "*.stp", "*.stl", "*.glb", "*.jpg", "*.jpeg", "*.heic", "*.tif", "*.tiff"]
+
+[[block]]
+target = "CLAUDE.md"
+repos = ["public/*"]
+exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
+comment = "<!--"
+comment_end = "-->"
+place = "after-intro"
+
+[[block.fragment]]
+template = "claude/contributor"

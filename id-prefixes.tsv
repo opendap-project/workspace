@@ -1,0 +1,28 @@
+prefix	path	note
+BLIB	public/libs/blender/docs/requirements	
+BRD	public/devices/t1/board/docs/requirements	
+CAM	public/hats/camera/docs/requirements	
+CASE	public/devices/t1/case/docs/requirements	
+DESK	public/desktop/docs/requirements	
+DS	public/blackbird-ui/docs/requirements	
+FLIB	public/libs/freecad/docs/requirements	
+FPC	public/devices/t1/faceplates/cassette/docs/requirements	
+FPK	public/devices/t1/faceplates/classic/docs/requirements	
+FPT	public/devices/t1/faceplates/touch/docs/requirements	
+HCS	public/hats/standard/docs/requirements	
+KLIB	public/libs/kicad/docs/requirements	
+NAS	public/hats/nas/docs/requirements	
+OS	public/blackbird-os/docs/requirements	
+OSC	public/hats/oscilloscope/docs/requirements	
+OUT	public/hats/outdoor/docs/requirements	
+PLIB	public/libs/parts/docs/requirements	
+PWR	public/hats/powerbank/docs/requirements	
+RAD	public/hats/radio/docs/requirements	
+REC	public/hats/recorder/docs/requirements	
+SYS	public/system/docs/requirements	
+T1	public/devices/t1/t1/docs/requirements	
+TK	public/cli/docs/requirements	new ids
+TK	public/toolkit/hardware/docs/requirements	legacy ids only, never extended
+TK	public/toolkit/verify/docs/requirements	legacy ids only, never extended
+VD	public/virtual-devices/docs/requirements	
+VNA	public/hats/vna/docs/requirements	
