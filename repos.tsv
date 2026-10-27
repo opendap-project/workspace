@@ -7,15 +7,7 @@ public/desktop	opendap-project/desktop
 public/devices/t1/faceplates/cassette	opendap-project/faceplate-cassette
 public/devices/t1/faceplates/classic	opendap-project/faceplate-classic
 public/devices/t1/faceplates/touch	opendap-project/faceplate-touch
-public/hats/camera	opendap-project/hat-camera
-public/hats/nas	opendap-project/hat-nas
-public/hats/oscilloscope	opendap-project/hat-oscilloscope
-public/hats/outdoor	opendap-project/hat-outdoor
-public/hats/powerbank	opendap-project/hat-powerbank
-public/hats/radio	opendap-project/hat-radio
-public/hats/recorder	opendap-project/hat-recorder
-public/hats/standard	opendap-project/hat-standard
-public/hats/vna	opendap-project/hat-vna
+public/hats	opendap-project/hats
 public/libs	opendap-project/libs
 public/blackbird-os	opendap-project/blackbird-os
 public/rfcs	opendap-project/rfcs
