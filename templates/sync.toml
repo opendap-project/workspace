@@ -52,12 +52,10 @@ repos = ["public/*"]
 when = "present"
 
 # ---- Composed files: one managed block per file; lines outside the block are the repository's own ----
-# board, libs/kicad and libs/parts join after the public history rewrite (restructure task HL-37).
 
 [[block]]
 target = ".gitignore"
 repos = ["public/*"]
-exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
 
 [[block.fragment]]
 template = "gitignore/common"
@@ -85,7 +83,6 @@ when_tracked = ["*.blend"]
 [[block]]
 target = ".gitattributes"
 repos = ["public/*"]
-exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
 
 [[block.fragment]]
 template = "gitattributes/kicad"
@@ -98,7 +95,6 @@ when_tracked = ["*.FCStd", "*.blend", "*.step", "*.stp", "*.stl", "*.glb", "*.jp
 [[block]]
 target = "CLAUDE.md"
 repos = ["public/*"]
-exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
 comment = "<!--"
 comment_end = "-->"
 place = "after-intro"
