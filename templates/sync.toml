@@ -101,3 +101,13 @@ place = "after-intro"
 
 [[block.fragment]]
 template = "claude/contributor"
+
+# ---- Generated files: rendered per repository from a workspace source ----
+
+[[generated]]
+generator = "codeowners"
+source = "owners.tsv"
+target = ".github/CODEOWNERS"
+repos = [".", "public/*"]
+# Until their own sessions commit the generated file (follow-up of WS-15); drop then.
+exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts", "public/system"]

@@ -21,6 +21,10 @@ scripts/bootstrap.sh            # run again to install pre-commit in every clone
 
 [`templates/`](templates/) holds the boilerplate every repository shares (agent settings and rules, lint configuration); `odapkit sync --check` reports copies that drifted and `odapkit sync --apply` repairs them.
 
+## Ownership
+
+[`owners.tsv`](owners.tsv) says who owns each public repository (a repository path glob, optionally a path inside it, and GitHub owners). `odapkit sync` generates every public repository's `.github/CODEOWNERS` from it; edit `owners.tsv`, never a `CODEOWNERS` file.
+
 ## Accepted RFCs
 
 The workspace root has no `docs/`, so it records here the outcome of each accepted [RFC](https://github.com/opendap-project/rfcs) that changes it.
