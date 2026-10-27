@@ -16,10 +16,7 @@ public/hats/radio	opendap-project/hat-radio
 public/hats/recorder	opendap-project/hat-recorder
 public/hats/standard	opendap-project/hat-standard
 public/hats/vna	opendap-project/hat-vna
-public/libs/blender	opendap-project/blender-lib
-public/libs/freecad	opendap-project/freecad-lib
-public/libs/kicad	opendap-project/kicad-lib
-public/libs/parts	opendap-project/parts-lib
+public/libs	opendap-project/libs
 public/blackbird-os	opendap-project/blackbird-os
 public/rfcs	opendap-project/rfcs
 public/system	opendap-project/system
