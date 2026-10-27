@@ -112,4 +112,4 @@ repos = [".", "public/*"]
 # board: its pre-commit needs a kicad-lib commit not yet pushed; kicad and parts: frozen for the libs cut;
 # system: CODEOWNERS is on origin/main (b0f4828), not yet pulled into its working clone.
 # Drop each entry once its clone has the file (follow-up of WS-15).
-exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts", "public/system"]
+exclude = ["public/devices/t1/board", "public/libs/kicad", "public/libs/parts"]
