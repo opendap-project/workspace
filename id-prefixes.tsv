@@ -22,7 +22,7 @@ REC	public/hats/recorder/docs/requirements
 SYS	public/system/docs/requirements	
 T1	public/devices/t1/t1/docs/requirements	
 TK	public/cli/docs/requirements	new ids
-TK	public/toolkit/hardware/docs/requirements	legacy ids only, never extended
-TK	public/toolkit/verify/docs/requirements	legacy ids only, never extended
+TK	public/tools/hardware/docs/requirements	legacy ids only, never extended
+TK	public/tools/verify/docs/requirements	legacy ids only, never extended
 VD	public/virtual-devices/docs/requirements	
 VNA	public/hats/vna/docs/requirements	

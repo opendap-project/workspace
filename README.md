@@ -10,7 +10,7 @@ OpenDAP is an Open Source, Open Hardware Digital Audio Player (DAP) that runs en
 git clone https://github.com/opendap-project/workspace.git opendap
 cd opendap
 scripts/bootstrap.sh            # clone every repository you can access
-public/toolkit/host/setup.sh    # install the developer host tools
+public/tools/host/setup.sh      # install the developer host tools
 scripts/bootstrap.sh            # run again to install pre-commit in every clone
 ```
 

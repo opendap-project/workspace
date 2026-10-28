@@ -14,10 +14,6 @@ public/rfcs	opendap-project/rfcs
 public/system	opendap-project/system
 public/devices/t1/t1	opendap-project/t1
 public/virtual-devices	opendap-project/virtual-devices
-public/toolkit/hardware	opendap-project/toolkit-hardware
-public/toolkit/hooks	opendap-project/toolkit-hooks
-public/toolkit/image	opendap-project/toolkit-image
-public/toolkit/host	opendap-project/toolkit-host
-public/toolkit/verify	opendap-project/toolkit-verify
+public/tools	opendap-project/tools
 public/blackbird-ui	opendap-project/blackbird-ui
 public/cli	opendap-project/cli
