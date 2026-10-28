@@ -1,6 +1,6 @@
 # Templates
 
-The boilerplate every OpenDAP repository shares, kept once. [`sync.toml`](sync.toml) says which template goes to which path of which repositories; `odapkit sync --check` reports drift and `odapkit sync --apply` repairs it ([workspace sync](https://github.com/opendap-project/toolkit-host/blob/main/docs/specs/workspace-sync.md)). Edit a template here, never its copies.
+The boilerplate every OpenDAP repository shares, kept once. [`sync.toml`](sync.toml) says which template goes to which path of which repositories; `odapkit sync --check` reports drift and `odapkit sync --apply` repairs it ([workspace sync](https://github.com/opendap-project/tools/blob/main/host/docs/specs/workspace-sync.md)). Edit a template here, never its copies.
 
 | Template | Copied to |
 |---|---|
