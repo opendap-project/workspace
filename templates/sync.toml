@@ -14,41 +14,48 @@ target = ".markdownlint-cli2.jsonc"
 repos = ["public/*"]
 when = "always"
 
+# The six repositories of the pending t1 cut (HL-92) keep their folder-relative rule paths until the cut gives them
+# the **/ globs; drop these excludes then.
 [[file]]
 template = "claude/rules/kicad.md"
 target = ".claude/rules/kicad.md"
 repos = ["public/*"]
+exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/freecad.md"
 target = ".claude/rules/freecad.md"
 repos = ["public/*"]
+exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/blender.md"
 target = ".claude/rules/blender.md"
 repos = ["public/*"]
-exclude = ["public/libs"]
+exclude = ["public/libs", "public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/export.md"
 target = ".claude/rules/export.md"
 repos = ["public/*"]
+exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/firmware.md"
 target = ".claude/rules/firmware.md"
 repos = ["public/*"]
+exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/sim.md"
 target = ".claude/rules/sim.md"
 repos = ["public/*"]
+exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 # ---- Composed files: one managed block per file; lines outside the block are the repository's own ----
