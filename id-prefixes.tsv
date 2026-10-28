@@ -10,6 +10,7 @@ FPC	public/devices/t1/faceplates/cassette/docs/requirements
 FPK	public/devices/t1/faceplates/classic/docs/requirements	
 FPT	public/devices/t1/faceplates/touch/docs/requirements	
 HCS	public/hats/standard/docs/requirements	
+HUB	public/hats/concepts/hub/docs/requirements	
 KLIB	public/libs/kicad/docs/requirements	
 NAS	public/hats/nas/docs/requirements	
 OS	public/blackbird-os/docs/requirements	
@@ -26,3 +27,4 @@ TK	public/tools/hardware/docs/requirements	legacy ids only, never extended
 TK	public/tools/verify/docs/requirements	legacy ids only, never extended
 VD	public/virtual-devices/docs/requirements	
 VNA	public/hats/vna/docs/requirements	
+WIR	public/hats/concepts/wired/docs/requirements	
