@@ -3,7 +3,7 @@ BLIB	public/libs/blender/docs/requirements
 BRD	public/devices/t1/board/docs/requirements	
 CAM	public/hats/camera/docs/requirements	
 CASE	public/devices/t1/case/docs/requirements	
-DESK	public/desktop/docs/requirements	
+DESK	public/host/desktop/docs/requirements	
 DS	public/blackbird-ui/docs/requirements	
 FLIB	public/libs/freecad/docs/requirements	
 FPC	public/devices/t1/faceplates/cassette/docs/requirements	
@@ -22,7 +22,7 @@ RAD	public/hats/radio/docs/requirements
 REC	public/hats/concepts/recorder/docs/requirements	
 SYS	public/system/docs/requirements	
 T1	public/devices/t1/t1/docs/requirements	
-TK	public/cli/docs/requirements	new ids
+TK	public/host/cli/docs/requirements	new ids
 TK	public/tools/hardware/docs/requirements	legacy ids only, never extended
 TK	public/tools/verify/docs/requirements	legacy ids only, never extended
 VD	public/virtual-devices/docs/requirements	

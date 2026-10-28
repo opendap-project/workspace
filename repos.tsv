@@ -3,7 +3,6 @@ public/.github	opendap-project/.github
 public/devices/t1/board	opendap-project/board
 public/devices/t1/case	opendap-project/case
 public/claude-plugins	opendap-project/claude-plugins
-public/desktop	opendap-project/desktop
 public/devices/t1/faceplates/cassette	opendap-project/faceplate-cassette
 public/devices/t1/faceplates/classic	opendap-project/faceplate-classic
 public/devices/t1/faceplates/touch	opendap-project/faceplate-touch
@@ -16,4 +15,4 @@ public/devices/t1/t1	opendap-project/t1
 public/virtual-devices	opendap-project/virtual-devices
 public/tools	opendap-project/tools
 public/blackbird-ui	opendap-project/blackbird-ui
-public/cli	opendap-project/cli
+public/host	opendap-project/host
