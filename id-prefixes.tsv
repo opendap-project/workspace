@@ -4,7 +4,7 @@ BRD	public/devices/t1/board/docs/requirements
 CAM	public/hats/camera/docs/requirements	
 CASE	public/devices/t1/case/docs/requirements	
 DESK	public/host/desktop/docs/requirements	
-DS	public/blackbird-ui/docs/requirements	
+DS	public/blackbird/ui/docs/requirements	
 FLIB	public/libs/freecad/docs/requirements	
 FPC	public/devices/t1/faceplates/cassette/docs/requirements	
 FPK	public/devices/t1/faceplates/classic/docs/requirements	
@@ -13,18 +13,18 @@ HCS	public/hats/standard/docs/requirements
 HUB	public/hats/concepts/hub/docs/requirements	
 KLIB	public/libs/kicad/docs/requirements	
 NAS	public/hats/concepts/nas/docs/requirements	
-OS	public/blackbird-os/docs/requirements	
+OS	public/blackbird/os/docs/requirements	
 OSC	public/hats/concepts/oscilloscope/docs/requirements	
 OUT	public/hats/outdoor/docs/requirements	
 PLIB	public/libs/parts/docs/requirements	
 PWR	public/hats/concepts/powerbank/docs/requirements	
 RAD	public/hats/radio/docs/requirements	
 REC	public/hats/concepts/recorder/docs/requirements	
-SYS	public/system/docs/requirements	
+SYS	public/blackbird/system/docs/requirements	
 T1	public/devices/t1/t1/docs/requirements	
 TK	public/host/cli/docs/requirements	new ids
 TK	public/tools/hardware/docs/requirements	legacy ids only, never extended
 TK	public/tools/verify/docs/requirements	legacy ids only, never extended
-VD	public/virtual-devices/docs/requirements	
+VD	public/blackbird/emulator/docs/requirements	
 VNA	public/hats/concepts/vna/docs/requirements	
 WIR	public/hats/concepts/wired/docs/requirements	

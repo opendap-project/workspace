@@ -8,11 +8,8 @@ public/devices/t1/faceplates/classic	opendap-project/faceplate-classic
 public/devices/t1/faceplates/touch	opendap-project/faceplate-touch
 public/hats	opendap-project/hats
 public/libs	opendap-project/libs
-public/blackbird-os	opendap-project/blackbird-os
+public/blackbird	opendap-project/blackbird
 public/rfcs	opendap-project/rfcs
-public/system	opendap-project/system
 public/devices/t1/t1	opendap-project/t1
-public/virtual-devices	opendap-project/virtual-devices
 public/tools	opendap-project/tools
-public/blackbird-ui	opendap-project/blackbird-ui
 public/host	opendap-project/host
