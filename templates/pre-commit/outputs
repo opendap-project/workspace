@@ -1,0 +1,6 @@
+  # Visual outputs (RFC 0021): stamps current before each commit, regenerated before each push
+  - repo: https://github.com/opendap-project/tools
+    rev: v0.2.0
+    hooks:
+      - id: outputs-current
+      - id: outputs-regenerate

@@ -93,6 +93,12 @@ when_tracked = ["*.kicad_pro", "*.kicad_sch", "*.kicad_sym", "*.kicad_mod"]
 template = "gitattributes/lfs"
 when_tracked = ["*.FCStd", "*.blend", "*.step", "*.stp", "*.stl", "*.glb", "*.jpg", "*.jpeg", "*.heic", "*.tif", "*.tiff"]
 
+# An outputs.toml under a fixtures folder is test data (tools' render fixtures), not a component's outputs.
+[[block.fragment]]
+template = "gitattributes/outputs"
+when_tracked = ["outputs.toml"]
+when_tracked_except = ["**/tests/fixtures/**", "**/fixtures/**"]
+
 [[block]]
 target = "CLAUDE.md"
 repos = ["public/*"]
@@ -123,3 +129,10 @@ place = "end"
 
 [[block.fragment]]
 generator = "odw-check"
+
+# The visual-output hooks (RFC 0021), for a repository that declares outputs. They ship in tools v0.2.0; a
+# repository joins this block's repos at the v0.2.0 pin rollout (t1 first).
+[[block.fragment]]
+template = "pre-commit/outputs"
+when_tracked = ["outputs.toml"]
+when_tracked_except = ["**/tests/fixtures/**", "**/fixtures/**"]
