@@ -1,5 +1,5 @@
 # Shared boilerplate: each [[file]] is copied verbatim into the repositories it applies to.
-# odapkit sync --check reports drift; odapkit sync --apply repairs it. Spec: toolkit-host docs/specs/workspace-sync.md.
+# odapkit sync --check reports drift; odapkit sync --apply repairs it. Spec: tools host/docs/specs/workspace-sync.md.
 schema = "opendap.sync/v1"
 
 [[file]]
@@ -14,48 +14,42 @@ target = ".markdownlint-cli2.jsonc"
 repos = ["public/*"]
 when = "always"
 
-# The six repositories of the pending t1 cut (HL-92) keep their folder-relative rule paths until the cut gives them
-# the **/ globs; drop these excludes then.
 [[file]]
 template = "claude/rules/kicad.md"
 target = ".claude/rules/kicad.md"
 repos = ["public/*"]
-exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/freecad.md"
 target = ".claude/rules/freecad.md"
 repos = ["public/*"]
-exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/blender.md"
 target = ".claude/rules/blender.md"
 repos = ["public/*"]
-exclude = ["public/libs", "public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
+# libs keeps its own variant: it is the Blender library the other repositories link from.
+exclude = ["public/libs"]
 when = "present"
 
 [[file]]
 template = "claude/rules/export.md"
 target = ".claude/rules/export.md"
 repos = ["public/*"]
-exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/firmware.md"
 target = ".claude/rules/firmware.md"
 repos = ["public/*"]
-exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 [[file]]
 template = "claude/rules/sim.md"
 target = ".claude/rules/sim.md"
 repos = ["public/*"]
-exclude = ["public/devices/t1/t1", "public/devices/t1/board", "public/devices/t1/case", "public/devices/t1/faceplates/touch", "public/devices/t1/faceplates/classic", "public/devices/t1/faceplates/cassette"]
 when = "present"
 
 # ---- Composed files: one managed block per file; lines outside the block are the repository's own ----
@@ -116,7 +110,4 @@ generator = "codeowners"
 source = "owners.tsv"
 target = ".github/CODEOWNERS"
 repos = [".", "public/*"]
-# board: its pre-commit needs a kicad-lib commit not yet pushed; kicad and parts: frozen for the libs cut;
-# system: CODEOWNERS is on origin/main (b0f4828), not yet pulled into its working clone.
-# Drop each entry once its clone has the file (follow-up of WS-15).
 exclude = []

@@ -1,6 +1,6 @@
 # Who owns what in the public OpenDAP repositories: a repository path glob (as repos.tsv writes it;
 # "." is this repository), optionally ":" and a CODEOWNERS pattern inside it, then GitHub owners.
-# odapkit sync renders each repository's .github/CODEOWNERS from it. Spec: toolkit-host docs/specs/workspace-sync.md.
+# odapkit sync renders each repository's .github/CODEOWNERS from it. Spec: tools host/docs/specs/workspace-sync.md.
 path	owner
 .	@diananerd
 public/*	@diananerd
