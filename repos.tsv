@@ -1,15 +1,10 @@
 path	repository
 public/.github	opendap-project/.github
-public/devices/t1/board	opendap-project/board
-public/devices/t1/case	opendap-project/case
 public/claude-plugins	opendap-project/claude-plugins
-public/devices/t1/faceplates/cassette	opendap-project/faceplate-cassette
-public/devices/t1/faceplates/classic	opendap-project/faceplate-classic
-public/devices/t1/faceplates/touch	opendap-project/faceplate-touch
 public/hats	opendap-project/hats
 public/libs	opendap-project/libs
 public/blackbird	opendap-project/blackbird
 public/rfcs	opendap-project/rfcs
-public/devices/t1/t1	opendap-project/t1
+public/t1	opendap-project/t1
 public/tools	opendap-project/tools
 public/host	opendap-project/host

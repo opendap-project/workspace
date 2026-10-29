@@ -1,14 +1,14 @@
 prefix	path	note
 BLIB	public/libs/blender/docs/requirements	
-BRD	public/devices/t1/board/docs/requirements	
+BRD	public/t1/board/docs/requirements	
 CAM	public/hats/camera/docs/requirements	
-CASE	public/devices/t1/case/docs/requirements	
+CASE	public/t1/case/docs/requirements	
 DESK	public/host/desktop/docs/requirements	
 DS	public/blackbird/ui/docs/requirements	
 FLIB	public/libs/freecad/docs/requirements	
-FPC	public/devices/t1/faceplates/cassette/docs/requirements	
-FPK	public/devices/t1/faceplates/classic/docs/requirements	
-FPT	public/devices/t1/faceplates/touch/docs/requirements	
+FPC	public/t1/faceplates/cassette/docs/requirements	
+FPK	public/t1/faceplates/classic/docs/requirements	
+FPT	public/t1/faceplates/touch/docs/requirements	
 HCS	public/hats/standard/docs/requirements	
 HUB	public/hats/concepts/hub/docs/requirements	
 KLIB	public/libs/kicad/docs/requirements	
@@ -21,7 +21,7 @@ PWR	public/hats/concepts/powerbank/docs/requirements
 RAD	public/hats/radio/docs/requirements	
 REC	public/hats/concepts/recorder/docs/requirements	
 SYS	public/blackbird/system/docs/requirements	
-T1	public/devices/t1/t1/docs/requirements	
+T1	public/t1/product/docs/requirements	
 TK	public/host/cli/docs/requirements	new ids
 TK	public/tools/hardware/docs/requirements	legacy ids only, never extended
 TK	public/tools/verify/docs/requirements	legacy ids only, never extended
