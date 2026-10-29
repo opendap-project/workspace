@@ -111,3 +111,15 @@ source = "owners.tsv"
 target = ".github/CODEOWNERS"
 repos = [".", "public/*"]
 exclude = []
+
+# ---- The odw check hooks: a generated block at the end of the pre-commit configuration (HL-103) ----
+# One local hook per stage each check.toml declares (fast before a commit, full before a push). A repository is
+# listed once its own hooks for those steps are gone and pre-commit run --all-files passes with the block.
+
+[[block]]
+target = ".pre-commit-config.yaml"
+repos = ["public/host"]
+place = "end"
+
+[[block.fragment]]
+generator = "odw-check"
