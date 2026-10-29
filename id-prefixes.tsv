@@ -23,8 +23,7 @@ REC	public/hats/concepts/recorder/docs/requirements
 SYS	public/blackbird/system/docs/requirements	
 T1	public/t1/product/docs/requirements	
 TK	public/host/cli/docs/requirements	new ids
-TK	public/tools/hardware/docs/requirements	legacy ids only, never extended
-TK	public/tools/verify/docs/requirements	legacy ids only, never extended
+TK	public/tools/docs/requirements	legacy ids only, never extended (the tools root's one file since HL-71)
 VD	public/blackbird/emulator/docs/requirements	
 VNA	public/hats/concepts/vna/docs/requirements	
 WIR	public/hats/concepts/wired/docs/requirements	
