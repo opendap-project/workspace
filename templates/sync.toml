@@ -118,7 +118,7 @@ exclude = []
 
 [[block]]
 target = ".pre-commit-config.yaml"
-repos = ["public/host"]
+repos = ["public/host", "public/blackbird"]
 place = "end"
 
 [[block.fragment]]
